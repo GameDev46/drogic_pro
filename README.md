@@ -22,7 +22,7 @@
 <br>
 
 <div align="left">
-<a href="https://gamedev46.github.io/drogic_pro/">
+<a href="https://gamedev46.github.io/drogic_pro/drogicPro/">
     <img src="https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge&labelColor=1f1f22" alt="View site - GH Pages">
 </a>
 </div>
@@ -36,11 +36,11 @@
 
 # Drogic Pro
 
-A revamped version of my old logic gate building program
+A revamped version of my old logic gate building program with a variety of new features and some much needed ease of use updates
 
 ## Usage
 
-Simply use the dropdown to select the node type and hit the add node button to add it to the scene. Once added you can move the gate around by clicking down, dragging and dropping it. To connect gates simply drag the blue outlined circle in front of a gate (the output) on top of another gate to make it act as an input to this gate.
+Simply use the dropdown to select the node type and hit the add node button to add it to the workspace. Once added you can move the gate around by clicking down, dragging and dropping it. To connect gates simply drag one of the outputs on the right of the gate and connect it to the input of another gate (left side).
 
 ## Gates
 
@@ -48,7 +48,7 @@ Simply use the dropdown to select the node type and hit the add node button to a
 
 *OUTPUT* - Lights up when the input is high and turns off when the input is low
 
-*CLOCK* - Toggles its output from high to low at fixed time intervals
+*CLOCK* - Toggles its output from high to low at fixed time intervals of 1 second
 
 *BUFFER* - Leaves the signal unaffected
 
@@ -70,11 +70,20 @@ Simply use the dropdown to select the node type and hit the add node button to a
 
 --------
 
-FULL ADDER - Takes in 3 inputs (bit 1, bit 2 and previous carry bit) and has 2 outputs (the sum of bit 1 and bit 2 and carry bit)
+*LATCH* - When the clock is pulsed high it will store the data signal and output it through the out output
+
+*8 BIT LATCH* - Functions the same as the regular latch but has 8 inputs and 8 outputs for use in larger circuits
+
+--------
+
+*FULL ADDER* - Takes in 3 inputs (bit 1, bit 2 and previous carry bit) and has 2 outputs (the sum of bit 1 and bit 2 and carry bit)
+
+*ALU* - Performs an operation on 2 given 8 bit numbers
+
+*RAM* - When the clock is pusled high and write mode is active it will store the given 8 bit number in the given 8 bit address in ram, when the clock is pulsed high and read mode is active it will output the the 8 bit number stored in the selected adress and when the clock is pulsed high and it is in clear mode the entire memory of the ram will be reset to zeros
 
 ## Saving and Loading
 
-To save your creations simply press the save button on the top navigation bar and copy the provided save URL and paste it to a file on your device ready to be loaded later.
-
-To load your creation simply copy the saved creation URL and paste it into your browser of choice and it will bring you back to the website and load your saved creation ready for you to continue editing it!
+- To save your creations simply press the save button on the top right navigation bar and a file will automatically be created and saved to your device.
+- To load your creations simply press the load button and you will be prompted to select a valid text file to load into your workspace
 
