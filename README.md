@@ -1,6 +1,6 @@
 <a href="https://github.com/GameDev46" title="Go to GitHub repo">
     <img src="https://img.shields.io/static/v1?label=GameDev46&message=|&color=Green&logo=github&style=for-the-badge&labelColor=1f1f22" alt="GameDev46 - drogic_pro">
-    <img src="https://img.shields.io/badge/Version-0.8.3-green?style=for-the-badge&labelColor=1f1f22&color=Green" alt="GameDev46 - drogic_pro">
+    <img src="https://img.shields.io/badge/Version-0.9.0-green?style=for-the-badge&labelColor=1f1f22&color=Green" alt="GameDev46 - drogic_pro">
 </a>
 
 
@@ -48,13 +48,17 @@ Simply use the dropdown to select the node type and hit the add node button to a
 
 *OUTPUT* - Lights up when the input is high and turns off when the input is low
 
-*CLOCK* - Toggles its output from high to low at fixed time intervals of 1 second
+*OSCILLATOR* - Toggles its output from high to low at the frequency specified by the user (maximum of 60Hz)
+
+*DECIMAL INPUT* - Allows the user to enter an integer to the gate and then its corresponding binary representation will be output
+
+*SCREEN* - Input an x and y coordinate and pulse the clock to turn on a pixel on the screen and then you can pulse the clock while clear is active to remove the contents of the screen
+
+--------
 
 *BUFFER* - Leaves the signal unaffected
 
 *TOGGLE* - Toggles from low to high every time its input goes from low to high
-
---------
 
 *NOT* - NOT Gate
 
@@ -79,6 +83,8 @@ Simply use the dropdown to select the node type and hit the add node button to a
 *FULL ADDER* - Takes in 3 inputs (bit 1, bit 2 and previous carry bit) and has 2 outputs (the sum of bit 1 and bit 2 and carry bit)
 
 *ALU* - Performs an operation on 2 given 8 bit numbers
+
+--------
 
 *RAM* - When the clock is pusled high and write mode is active it will store the given 8 bit number in the given 8 bit address in ram, when the clock is pulsed high and read mode is active it will output the the 8 bit number stored in the selected adress and when the clock is pulsed high and it is in clear mode the entire memory of the ram will be reset to zeros
 
